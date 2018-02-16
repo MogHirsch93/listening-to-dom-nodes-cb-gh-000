@@ -38,4 +38,15 @@
       </div>
     </div>
   </body>
+  <script>
+  const divs = document.querySelectorAll('div')
+
+  function bubble(e) {
+    console.log(this.firstChild.nodeValue.trim() + ' mannaman be like')
+  }
+
+  for (let i = 0; i < divs.length; i++) {
+    divs[i].addEventListener('click', bubble)
+  }
+  </script>
 </html>
